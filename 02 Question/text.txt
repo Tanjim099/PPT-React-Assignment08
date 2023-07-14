@@ -1,0 +1,2 @@
+The Virtual DOM (VDOM) is a concept used by React to optimize the performance of updating and rendering UI components. 
+It is an abstraction of the real DOM (Document Object Model) that represents the structure of a web page.

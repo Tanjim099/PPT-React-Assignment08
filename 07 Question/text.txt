@@ -1,0 +1,13 @@
+
+Prop drilling in React refers to the scenario where props need to be passed through multiple intermediate components that don't actually use those props. 
+It can occur when a component needs to pass data down to a deeply nested child component that is several levels deep in the component tree.
+
+Prop drilling can lead to code verbosity and make it harder to maintain and refactor the codebase. It violates the principle of encapsulation, 
+as components that don't need the props are still required to pass them down.
+
+To avoid prop drilling and make the code more maintainable and scalable, you can consider the following approaches:
+1. Use Context API
+2. Implement Redux or other state management libraries
+3. Use React Router's useParams
+4. Component composition and inversion of control
+5. Use React's memoization techniques

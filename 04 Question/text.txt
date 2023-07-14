@@ -1,0 +1,34 @@
+In the context of React, a component is a reusable and self-contained piece of code that encapsulates a specific part of a user interface. 
+Components in React allow developers to break down complex UIs into smaller, manageable parts, making the code more modular, reusable, 
+and maintainable.
+
+There are two main types of components in React:
+
+1. Functional Component 
+
+Functional components are defined as JavaScript functions.
+They accept props (properties) as input and return React elements to describe what should be rendered.
+Functional components do not have their own internal state and rely on props passed down from parent components.
+They are simpler and easier to write, understand, and test.
+With the introduction of React hooks in React 16.8, functional components can also have state and lifecycle functionality through the useState, useEffect, and other hooks.
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+
+2. Pure Components:
+Pure components are a performance optimization provided by React.
+They are similar to functional components but come with an additional built-in shallow prop and state comparison in shouldComponentUpdate. 
+This helps avoid unnecessary re-rendering when the component's props and state have not changed.
+
+React.Component {
+   render() {
+      return (
+         <div>
+            <p>Hello Emizen!</p>
+         </div>
+      )
+   }
+}export default HelloEmizen;
+
